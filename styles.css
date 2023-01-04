@@ -1,0 +1,22 @@
+body {
+  padding: 20px;
+}
+
+h1 {
+  color: red;
+  font-family: cursive;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}

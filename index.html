@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My First Parcel App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script id="todoTpl" type="x-tmpl">
+      <label>
+        <input
+          type="checkbox"
+          data-content="toggle"
+          {% if completed %} checked {% endif %}
+        />
+        <span>{{title}}</span>
+        <button data-action="remove">Remove</button>
+      </label>
+    </script>
+
+    <script id="addTodoTpl" type="x-tmpl">
+      <header>
+        <input data-content="input"/>
+        <button data-action="add">Add</button>
+      </header>
+    </script>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
